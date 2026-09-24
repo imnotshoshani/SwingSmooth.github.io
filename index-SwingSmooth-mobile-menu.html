@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b342d">
+<meta name="description" content="SwingSmooth — Get Looser. Swing Farther. Massage and assisted stretching for golfers.">
+<meta property="og:title" content="SwingSmooth — Get Looser. Swing Farther.">
+<meta property="og:description" content="Prepare your body. Free your swing.">
+<title>SwingSmooth — Get Looser. Swing Farther.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.advantage-logo{
+  display:block;
+  width:275px;
+  height:auto;
+  margin:0 auto 1.25rem;
+}
+
+.mobile-menu-button{
+  display:none;
+  width:42px;
+  height:42px;
+  margin-left:auto;
+  padding:9px;
+  border:0;
+  border-radius:7px;
+  background:var(--green);
+  cursor:pointer;
+  flex-direction:column;
+  justify-content:center;
+  gap:5px;
+}
+.mobile-menu-button span{
+  display:block;
+  width:24px;
+  height:2px;
+  margin:0 auto;
+  background:#fff;
+  border-radius:2px;
+}
+.mobile-menu{
+  display:none;
+}
+@media(max-width:760px){
+  .mobile-menu-button{display:flex}
+  .mobile-menu{
+    position:absolute;
+    top:64px;
+    left:0;
+    right:0;
+    display:none;
+    flex-direction:column;
+    padding:10px 14px 15px;
+    background:rgba(255,255,255,.99);
+    border-bottom:1px solid rgba(11,52,45,.12);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    z-index:30;
+  }
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{
+    padding:14px 10px;
+    color:var(--green);
+    text-decoration:none;
+    font-size:10px;
+    font-weight:600;
+    letter-spacing:.1em;
+    border-bottom:1px solid rgba(11,52,45,.08);
+  }
+  .mobile-menu a:last-child{border-bottom:0}
+  .mobile-menu .mobile-menu-cta{
+    margin-top:8px;
+    padding:13px 14px;
+    border-radius:7px;
+    background:var(--green);
+    color:#fff;
+    text-align:center;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <a class="logo" href="#top"><img src="assets/swingsmooth-logo.png" alt="SwingSmooth"></a>
+  <nav>
+    <a href="#top">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#clubs">FOR GOLF CLUBS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  <a class="header-button" href="#services">GET SWINGREADY</a>
+
+  <button class="mobile-menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#top">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#clubs">FOR GOLF CLUBS</a>
+    <a href="#contact">CONTACT</a>
+    <a class="mobile-menu-cta" href="#services">GET SWINGREADY</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">JACK NICKLAUS HAD A SIMPLE IDEA.</p>
+    <blockquote>“When I get to the golf course the very first thing I do is swing very loosely. I’m not trying to create any tension.”</blockquote>
+    <p class="credit">— JACK NICKLAUS</p>
+    <div class="question">
+      <p>So maybe the question isn’t only how <em>hard</em> you can swing.</p>
+      <div class="hero-question-break"></div>
+      <br><br>
+      <h1>Maybe it’s also how <em>freely</em>...</h1>
+    </div>
+  </div>
+
+  <div class="hero-art golfer">
+    <img src="assets/hero-golfer.jpg" alt="Golfer finishing a swing">
+  </div>
+</section>
+
+<section class="swing-smooth-intro">
+  <div class="wrap narrow">
+    <img class="advantage-logo" src="assets/swingsmooth-logo.png" alt="SwingSmooth">
+    <blockquote>SwingSmooth is a <strong>premium</strong> massage service for golfers, using a proprietary massage and assisted-stretching routine to help you loosen up, move more freely, and optimize your body for a powerful swing.</blockquote>
+  </div>
+  <br></br>
+</section>
+
+<section class="focus" id="about">
+  <div class="wrap">
+
+    <p class="focus-lead">SwingSmooth prepares the body for the demands of golf—focusing on the areas that matter most.</p>
+
+    <div class="focus-grid">
+      <article>
+        <img src="assets/forearms-grip.jpg" alt="Forearms and golf grip">
+        <h2>FOREARMS · GRIP</h2>
+        <p>Loosen the forearms.<br>Free the hands.</p>
+      </article>
+      <article>
+        <img src="assets/midback-rotation.jpg" alt="Mid-back and rotation">
+        <h2>MID-BACK · ROTATION</h2>
+        <p>Create room for a freer turn.</p>
+      </article>
+      <article>
+        <img src="assets/hips-power.jpg" alt="Hips and lower body">
+        <h2>HIPS + GLUTES · POWER</h2>
+        <p>Build a more mobile,<br>stable foundation.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="eyebrow centered">LESS TENSION. MORE FREEDOM.</p>
+    <h2 class="services-title">Get Looser. Swing Farther.</h2>
+    <div class="line"></div>
+    <p class="service-subtitle">MASSAGE · MOBILITY · A MORE FLUID YOU.</p>
+
+    <div class="service-grid">
+      <article class="service">
+        <div class="service-icon clock"></div>
+        <div>
+          <h3>SWINGSMOOTH EVENTS</h3>
+          <p class="kicker">FOR DIRECTORS OF GOLF</p>
+          <p>A premium experience for your members.</p>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="service-icon person"></div>
+        <div>
+          <h3>INDIVIDUALIZED SESSION</h3>
+          <p class="kicker">ONE-ON-ONE MASSAGE + ASSISTED STRETCHING.</p>
+          <p>A customized session designed around your body, your movement, and the demands of your swing.</p>
+        </div>
+      </article>
+    </div>
+
+    <a class="main-button" href="tel:+15042515391">GET SWINGREADY <span>→</span></a>
+
+    <div class="benefits">
+      <span>⚑ &nbsp; PLAY MORE COMFORTABLY</span>
+      <span>↔ &nbsp; MOVE MORE FREELY</span>
+      <span>↗ &nbsp; PREPARE TO PERFORM</span>
+    </div>
+  </div>
+</section>
+
+<section class="clubs" id="clubs">
+  <div class="wrap narrow">
+    <p class="eyebrow centered">FOR GOLF CLUBS</p>
+    <h2>SWINGSMOOTH EVENTS</h2>
+    <p>A quick but brilliantly effective three-minute tune-up right before tee off.</p>
+    <div class="facts"><span>3 MINUTES</span><span>PRE-ROUND</span><span>MEMBER EXPERIENCE</span></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <p class="eyebrow centered">PREPARE YOUR BODY. FREE YOUR SWING.</p>
+  <h2>GET LOOSER.<br>SWING FARTHER.</h2>
+  <a class="main-button" href="tel:+15042515391">504 · 251 · 5391</a>
+</section>
+
+</main>
+
+<footer>
+  <img src="assets/swingsmooth-logo.png" alt="SwingSmooth">
+  <div class="domain">SWINGSMOOTH.GOLF</div>
+  <p class="disclaimer">SwingSmooth provides massage and assisted stretching intended to support movement and pre-round physical preparation. Results vary by individual.</p>
+  <p class="license">LMT #10076</p>
+</footer>
+
+<script>
+const mobileMenuButton = document.querySelector('.mobile-menu-button');
+const mobileMenu = document.querySelector('#mobile-menu');
+
+mobileMenuButton.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('open');
+  mobileMenuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+  mobileMenuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    mobileMenuButton.setAttribute('aria-expanded', 'false');
+    mobileMenuButton.setAttribute('aria-label', 'Open menu');
+  });
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
